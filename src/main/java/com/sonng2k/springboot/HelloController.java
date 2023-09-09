@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 // requests.
 // @GetMapping maps / to the index() method. When invoked from a browser or by using curl on the command line,
 // the method returns pure text. That is because @RestController combines @Controller and @ResponseBody, two
-// annotations that results in web requests returning data rather than a view.
+// annotations that result in web requests returning data rather than a view.
 
 @RestController
 public class HelloController {

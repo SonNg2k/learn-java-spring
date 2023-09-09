@@ -9,8 +9,8 @@ import org.springframework.http.ResponseEntity;
 import static org.assertj.core.api.Assertions.assertThat;
 
 // As well as mocking the HTTP request cycle, you can also use Spring Boot to write a simple full-stack
-// integration test. For example, instead of (or as well as) the mock test shown earlier, we could create this
-// integration test:
+// integration test. For example, instead of (or as well as) the mock test shown earlier, we could create the
+// integration test below...
 
 // The embedded server starts on a random port because of webEnvironment = SpringBootTest.WebEnvironment
 // .RANDOM_PORT, and the actual port is configured automatically in the base URL for the TestRestTemplate.
