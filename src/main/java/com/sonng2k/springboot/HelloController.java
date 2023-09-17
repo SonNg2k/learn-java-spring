@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 // Create a web controller
 
+// @RestController tells Spring that this class is a Component of type RestController and capable of handling
+// HTTP requests.
+
+// @GetMapping marks a method as a handler method
+
 // The class is flagged as a @RestController, meaning it is ready for use by Spring MVC to handle web
 // requests.
 // @GetMapping maps / to the index() method. When invoked from a browser or by using curl on the command line,
