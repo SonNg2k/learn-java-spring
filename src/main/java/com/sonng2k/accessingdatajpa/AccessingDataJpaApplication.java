@@ -7,12 +7,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-// To get output (to the console, in this example), you need to set up a logger. Then you need to set up
-// some data and use it to generate output.
-
-// The demo() method returns a CommandLineRunner bean that automatically runs the code when the application
-// launches.
-
 @SpringBootApplication
 public class AccessingDataJpaApplication {
 
@@ -25,7 +19,7 @@ public class AccessingDataJpaApplication {
     // The CustomerRepository is first fetched from the Spring application context
     @Bean
     public CommandLineRunner demo(CustomerRepository repository) {
-        return (args) -> {
+        return args -> {
             // save a few customers
             repository.save(new Customer("Jack", "Bauer"));
             repository.save(new Customer("Chloe", "O'Brian"));

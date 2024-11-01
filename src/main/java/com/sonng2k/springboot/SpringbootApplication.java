@@ -10,10 +10,6 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.Arrays;
 
-// There is also a CommandLineRunner method marked as a @Bean, and this runs on start up. It retrieves all
-// the beans that were created by your application or that were automatically added by Spring Boot. It sorts
-// them and prints them out.
-
 @SpringBootApplication
 public class SpringbootApplication {
 
