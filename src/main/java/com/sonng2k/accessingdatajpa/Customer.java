@@ -5,17 +5,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-// The Customer objects are annotated as a JPA entity (. Because no @Table annotation exists, it is assumed
-// that this entity is mapped to a table named Customer.)
-
-// The default constructor exists only for the sake of JPA. You do not use it directly, so it is designated
-// as protected. The other constructor is the one you use to create instances of Customer to be saved to the
-// database.
-
-// The Customer object’s `id` property is annotated with @Id so that JPA recognizes it as the object’s ID.
-// The `id` property is also annotated with @GeneratedValue to indicate that the ID should be generated
-// automatically.
-
 @Entity
 public class Customer {
 
